@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionNibCell" id="gTV-IL-0wX" customClass="customCVCell" customModule="Dec_19_Gallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="301" height="151"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pM8-go-lMx">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="151"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature1" translatesAutoresizingMaskIntoConstraints="NO" id="meU-r8-rre">
+                                <rect key="frame" x="0.0" y="0.0" width="301" height="151"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="meU-r8-rre" secondAttribute="bottom" id="76e-IF-Ijw"/>
+                            <constraint firstItem="meU-r8-rre" firstAttribute="top" secondItem="pM8-go-lMx" secondAttribute="top" id="7S6-hI-cer"/>
+                            <constraint firstItem="meU-r8-rre" firstAttribute="leading" secondItem="pM8-go-lMx" secondAttribute="leading" id="D8A-fp-nst"/>
+                            <constraint firstAttribute="trailing" secondItem="meU-r8-rre" secondAttribute="trailing" id="tnk-ov-e7R"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="pM8-go-lMx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QQI-QN-8ct"/>
+                <constraint firstAttribute="bottom" secondItem="pM8-go-lMx" secondAttribute="bottom" id="Ty0-O5-zAK"/>
+                <constraint firstAttribute="trailing" secondItem="pM8-go-lMx" secondAttribute="trailing" id="hbA-JY-Rsh"/>
+                <constraint firstItem="pM8-go-lMx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xy4-ap-Bp9"/>
+            </constraints>
+            <size key="customSize" width="301" height="151"/>
+            <connections>
+                <outlet property="showImg" destination="meU-r8-rre" id="dhb-NO-wz8"/>
+            </connections>
+            <point key="canvasLocation" x="38" y="-9"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="nature1" width="91.666664123535156" height="61"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
